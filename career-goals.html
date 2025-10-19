@@ -2,84 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Career Goals</title>
-  <link rel="stylesheet" href="tools\style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Goals - Bradley Looney</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header with navigation -->
   <header>
     <nav>
-      <a href="resume.html">Resume</a> |
       <a href="cover-letter.html">Cover Letter</a> |
+      <a href="resume.html">Résumé</a> |
       <a href="career-goals.html">Career Goals</a>
     </nav>
   </header>
-
-  <!-- Main content -->
   <main>
     <h1>Career Goals</h1>
-
-    <!-- Short-term goals -->
-    <article id="short-term">
-      <h2>Short-Term Goals</h2>
-      <p>
-        My short-term goal is to master the fundamentals of software engineering through
-        coursework and independent practice. I aim to build projects that demonstrate
-        my understanding of HTML, CSS, JavaScript, Python, and C++.
-      </p>
-    </article>
-
-    <!-- Long-term goals -->
-    <article id="long-term">
-      <h2>Long-Term Goals</h2>
-      <p>
-        My long-term goal is to work as a full-stack software engineer or AI developer, creating
-        technology that improves lives and simplifies complex tasks.
-        I’d also like to explore game development and machine learning applications.
-      </p>
-    </article>
-
-    <!-- Video section -->
-    <article id="video">
-      <h2>Random Video of Globe that looks Cool</h2>
-      <video controls width="400">
-        <source src="media/video/3129957-uhd_3840_2160_25fps.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </article>
-
-    <!-- Contact form -->
-    <article id="contact">
-      <h2>Contact Me</h2>
-      <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-        <label>First Name: <input type="text" name="first-name" required></label><br>
-        <label>Last Name: <input type="text" name="last-name" required></label><br>
-        <label>Company Name: <input type="text" name="company"></label><br>
-        <label>Email: <input type="email" name="email" required></label><br>
-        <label>Phone: <input type="tel" name="phone"></label><br>
-        <label>Message:<br>
-          <textarea name="message" rows="4" cols="40"></textarea>
-        </label><br>
-        Best Contact Time:<br>
-        <label><input type="radio" name="contact-time" value="am"> a.m.</label>
-        <label><input type="radio" name="contact-time" value="pm"> p.m.</label>
-        <label><input type="radio" name="contact-time" value="anytime"> anytime</label><br>
-        Preferred Contact Method:
-        <select name="contact-method">
-          <option value="phone">Phone</option>
-          <option value="email">Email</option>
-          <option value="text">Text</option>
-        </select><br><br>
-        <button type="submit">Submit</button>
-      </form>
-    </article>
+    <section id="short-term">
+      <article>
+        <h2>Short-Term Goals</h2>
+        <p>
+          My short-term goal is to master the fundamentals of software engineering through coursework and independent practice. I aim to build projects that demonstrate my understanding of <mark>HTML, CSS, JavaScript</mark>, Python, and C++.
+        </p>
+        <img src="tools/media/images/career-goal.jpg" alt="Professional working at a computer" class="career-image">
+      </article>
+    </section>
+    <section id="long-term">
+      <article>
+        <h2>Long-Term Goals</h2>
+        <p>
+          My long-term goal is to work as a <strong>full-stack software engineer</strong> or <strong>AI developer</strong>, creating technology that improves lives and simplifies complex tasks. I’d also like to explore <em>game development</em> and <em>machine learning</em> applications.
+        </p>
+      </article>
+    </section>
+    <section id="media">
+      <article>
+        <h2>Inspiration</h2>
+        <p>Listen to my motivation for pursuing a tech career:</p>
+        <audio id="motivation-audio" controls>
+          <source src="tools/media/audio/motivation-speech.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <p>Watch a video showcasing my commitment to learning:</p>
+        <video id="learning-video" controls width="400">
+          <source src="tools/media/video/3129957-uhd_3840_2160_25fps.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </article>
+    </section>
+    <section id="contact">
+      <article>
+        <h2>Contact Me</h2>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required><br>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required><br>
+          <label for="company-name">Company Name:</label>
+          <input type="text" id="company-name" name="company-name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone"><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="40"></textarea><br>
+          <fieldset>
+            <legend>Best Contact Time:</legend>
+            <input type="radio" id="am" name="contact-time" value="am">
+            <label for="am">A.M.</label>
+            <input type="radio" id="pm" name="contact-time" value="pm">
+            <label for="pm">P.M.</label>
+            <input type="radio" id="anytime" name="contact-time" value="anytime" checked>
+            <label for="anytime">Anytime</label>
+          </fieldset>
+          <label for="contact-method">Preferred Contact Method:</label>
+          <select id="contact-method" name="contact-method">
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+            <option value="text">Text</option>
+          </select><br>
+          <input type="submit" value="Submit">
+        </form>
+      </article>
+    </section>
   </main>
-
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Bradley Looney | All rights reserved.</p>
+    <p>Source: Image "career-goal.jpg", audio "motivation-speech.mp3", and video "3129957-uhd_3840_2160_25fps.mp4" obtained from Pixabay.com.</p>
   </footer>
-  <script src="tools/resumeScript.js"></script>
 </body>
 </html>
-

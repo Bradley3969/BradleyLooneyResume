@@ -2,97 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Resume</title>
-  <link rel="stylesheet" href="tools\style.css">
-  <script>
-    // Populate current date
-    window.onload = function() {
-      const dateDiv = document.getElementById('current-date');
-      const today = new Date();
-      dateDiv.textContent = "Resume last updated: " + today.toLocaleDateString();
-      
-      // Console message
-      console.log("Resume page loaded successfully!");
-    };
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résumé - Bradley Looney</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header with navigation -->
   <header>
     <nav>
-      <a href="resume.html">Resume</a> |
       <a href="cover-letter.html">Cover Letter</a> |
+      <a href="resume.html">Résumé</a> |
       <a href="career-goals.html">Career Goals</a>
     </nav>
-    
   </header>
-
   <main>
     <h1>Bradley Looney</h1>
     <h2>Software Engineering Student</h2>
-
-    <!-- Contact Info -->
-    <article id="contact">
-      <h3>Contact Information</h3>
-      <p>Email: <span>yourname@email.com</span></p>
-      <p>Phone: <span>(555) 555-5555</span></p>
-      <p>Location: <span>Grundy, VA</span></p>
-    </article>
-
-    <!-- Profile Image -->
-    <article id="image">
-      <h3>Profile Photo</h3>
-      <img src="images/Screenshot 2025-10-13 184133.png" alt="Bradley Looney profile picture" width="150">
-    </article>
-
-    <!-- Education -->
-    <article id="education">
-      <h3>Education</h3>
-      <p><strong>Western Governors University</strong><br>
-      Bachelor of Science, Software Engineering (In Progress)</p>
-      <hr>
-      <div id="current-date"></div>
-    </article>
-
-    <!-- Skills -->
-    <article id="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>C++ and Python fundamentals</li>
-        <li>Basic HTML, CSS, and JavaScript</li>
-        <li>Version control (GitHub)</li>
-        <li>Strong problem-solving mindset</li>
-      </ul>
-    </article>
-
-    <!-- Experience -->
-    <article id="experience">
-      <h3>Experience</h3>
-      <p>Independent learner and aspiring software engineer building foundational coding projects in Visual Studio Code.</p>
-    </article>
-
-    <!-- Table Example -->
-    <article id="projects">
-      <h3>Project Experience</h3>
-      <table>
-        <caption>Sample Projects</caption>
-        <tr>
-          <th>Project</th>
-          <th>Language</th>
-          <th>Completion Date</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td>Portfolio Website</td>
-          <td>HTML/CSS/JS</td>
-          <td>10/2025</td>
-          <td>Completed</td>
-        </tr>
-        <tr>
-          <td>Python Cal
-  <script>
-    src="tools/resumeScript.js"
-  </script>
+    <section id="contact">
+      <article>
+        <h3>Contact Information</h3>
+        <p>
+          Email: <span class="highlight">bradley.looney@example.com</span><br>
+          Phone: (276) 455-0758<br>
+          Location: Grundy, VA
+        </p>
+      </article>
+    </section>
+    <hr>
+    <section id="image">
+      <article>
+        <h3>Profile Photo</h3>
+        <img src="tools/media/images/profile-picture.png" alt="Bradley Looney profile picture" class="profile-image">
+      </article>
+    </section>
+    <hr>
+    <section id="education">
+      <article>
+        <h3>Education</h3>
+        <p>
+          <strong>Western Governors University</strong><br>
+          Bachelor of Science, Software Engineering (In Progress), <em>2023–Present</em>
+        </p>
+        <div id="current-date"></div>
+      </article>
+    </section>
+    <hr>
+    <section id="skills">
+      <article>
+        <h3>Skills</h3>
+        <ul class="custom-list">
+          <li>C++ and Python fundamentals</li>
+          <li>Basic HTML, CSS, and JavaScript</li>
+          <li>Version control (GitHub)</li>
+          <li>Strong problem-solving mindset</li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <section id="experience">
+      <article>
+        <h3>Experience</h3>
+        <p>
+          <strong>Independent Learner</strong>, <em>2023–Present</em><br>
+          Aspiring software engineer building foundational coding projects in Visual Studio Code.
+        </p>
+      </article>
+    </section>
+    <hr>
+    <section id="projects">
+      <article>
+        <h3>Project Experience</h3>
+        <table>
+          <caption>Sample Projects</caption>
+          <tr>
+            <th>Project</th>
+            <th>Language</th>
+            <th>Completion Date</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>HTML/CSS/JS</td>
+            <td>10/2025</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Python Calculator</td>
+            <td>Python</td>
+            <td>08/2025</td>
+            <td>In Progress</td>
+          </tr>
+          <tr>
+            <td>C++ Game Prototype</td>
+            <td>C++</td>
+            <td>09/2025</td>
+            <td>Completed</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Bradley Looney | All rights reserved.</p>
+    <p>Source: Image "profile-picture.png" obtained from Pixabay.com.</p>
+  </footer>
+  <script src="resumeScript.js"></script>
 </body>
-  
-          
+</html>
